@@ -1,19 +1,26 @@
 name: Teste de Build do Edson
-on: [push] # O robô trabalha sempre que você dá 'git push'
+
+on: [push]
 
 jobs:
   verificacao:
-    runs-on: ubuntu-latest # O robô usa um computador Linux na nuvem
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4 # Ele baixa o seu código
-      
-      - name: Instalando o Node.js
+      - uses: actions/checkout@v4
+
+      - name: Instalando Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20 # Versão estável que usamos no Vite
-          
-      - name: Instalando dependências
-        run: npm install # Ele testa se o 'npm install' funciona
-        
+          node-version: 20
+
+      - name: Instalando dependencias
+        run: npm install
+
       - name: Testando o Build
-        run: npm run build # Ele testa se o site consegue ser "empacotado" sem erros
+        run: npm run build
+
+      - name: 'Notify Vercel'
+        uses: 'vercel/repository-dispatch/actions/status@v1'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          name: 'Vercel - portfolio-engenharia-n57r: lint'
