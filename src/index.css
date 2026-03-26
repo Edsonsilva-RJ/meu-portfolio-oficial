@@ -1,0 +1,14 @@
+/* Reset de Engenharia: Garante que o site seja igual em todos os navegadores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+  overflow-x: hidden; /* Evita barra de rolagem horizontal chata */
+}
+html { scroll-behavior: smooth; }
