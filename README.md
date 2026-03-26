@@ -4,7 +4,8 @@ Este é o meu portfólio profissional, desenvolvido para centralizar meus projet
 
 ## 🌐 Demonstração
 O site está online e pode ser acessado aqui: 
-**[CLIQUE AQUI PARA VER O SITE](COLE_AQUI_O_LINK_DA_VERCEL)**
+**[CLIQUE AQUI PARA VER O SITE](portfolio-engenharia-n57r.vercel.app
+)**
 
 ---
 
