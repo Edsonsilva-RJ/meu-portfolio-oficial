@@ -3,7 +3,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 
 const WhatsAppButton = () => {
   // Substitua pelo seu número real (DDI + DDD + Número)
-  const phoneNumber = "55219XXXXXXXX"; 
+  const phoneNumber = "5521982859818"; 
   const message = "Olá Edson! Vi seu portfólio de Engenharia e gostaria de conversar sobre uma oportunidade.";
   const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
