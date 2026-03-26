@@ -6,11 +6,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      
       - name: Instalando Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          
       - name: Instalando dependencias
         run: npm install
+        
       - name: Testando o Build
         run: npm run build
+
+      
+      - name: 'Notify Vercel'
+        uses: 'vercel/repository-dispatch/actions/status@v1'
+        with:
+   
+          name: 'Vercel - portfolio-engenharia-n57r: lint'
