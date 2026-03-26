@@ -4,6 +4,7 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Navbar from './components/Navbar';
 import Contact from './components/Contact';
+import WhatsAppButton from './components/WhatsAppButton';
 
 
 import { SpeedInsights } from "@vercel/speed-insights/react";
@@ -15,6 +16,7 @@ function App() {
       <About />
       <Projects />
       <Contact />
+      <WhatsAppButton />
       <SpeedInsights />
     </div>
   );
