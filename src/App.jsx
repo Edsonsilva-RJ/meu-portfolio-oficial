@@ -7,7 +7,7 @@ import Navbar from './components/Navbar';
 import Contact from './components/Contact';
 
 
-
+import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/react";
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
       <Hero />
       <About />
       <Projects />
+      <Analytics />
       <SpeedInsights />
       <Contact />
       <WhatsAppButton />
