@@ -1,0 +1,19 @@
+name: Teste de Build do Edson
+on: [push] # O robô trabalha sempre que você dá 'git push'
+
+jobs:
+  verificacao:
+    runs-on: ubuntu-latest # O robô usa um computador Linux na nuvem
+    steps:
+      - uses: actions/checkout@v4 # Ele baixa o seu código
+      
+      - name: Instalando o Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20 # Versão estável que usamos no Vite
+          
+      - name: Instalando dependências
+        run: npm install # Ele testa se o 'npm install' funciona
+        
+      - name: Testando o Build
+        run: npm run build # Ele testa se o site consegue ser "empacotado" sem erros
