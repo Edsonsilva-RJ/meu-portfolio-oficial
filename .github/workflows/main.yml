@@ -18,9 +18,10 @@ jobs:
       - name: Testando o Build
         run: npm run build
 
-      
       - name: 'Notify Vercel'
         uses: 'vercel/repository-dispatch/actions/status@v1'
         with:
-   
+          # O GitHub vai buscar o Token que você salvou no "Secrets"
+          token: ${{ secrets.VERCEL_TOKEN }}
+          # O nome que a Vercel está esperando
           name: 'Vercel - portfolio-engenharia-n57r: lint'
