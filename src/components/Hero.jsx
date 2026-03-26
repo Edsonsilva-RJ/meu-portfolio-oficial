@@ -1,14 +1,17 @@
 import React from 'react';
 import '../styles/Hero.css';
 
-// Importamos a imagem que você salvou na pasta assets
-import heroImage from '../assets/hero-bg.jpg'; 
+import heroImage from '../assets/hero-bg.jpg';
+import profilePic from '../assets/minha-foto.png'; 
 
 const Hero = () => {
   return (
     <section className="hero" style={{ backgroundImage: `url(${heroImage})` }}>
       <div className="hero-overlay">
         <div className="hero-content">
+          <div className="hero-profile-container">
+            <img src={profilePic} alt="Edson Silva" className="hero-profile-pic" />
+          </div>
           <h1>EDSON SILVA</h1>
           <h2>Engenharia de Computação | 9º Semestre</h2>
           <p>

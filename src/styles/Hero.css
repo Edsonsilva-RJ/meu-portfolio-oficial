@@ -65,3 +65,39 @@
   border-radius: 5px;
   cursor: pointer;
 }
+/* Container para centralizar e dar margem à foto */
+.hero-profile-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px; /* Espaço entre a foto e o seu nome */
+}
+
+/* Estilo da Foto de Perfil (Circular e Profissional) */
+.hero-profile-pic {
+  width: 180px; /* Tamanho da imagem (pode aumentar se quiser) */
+  height: 180px; /* Mesma altura para manter o círculo perfeito */
+  object-fit: cover; /* Garante que a foto não fique esticada */
+  border-radius: 50%; /* Faz a foto ficar redonda */
+  
+  /* Borda sutil para separar da imagem de fundo tecnológica */
+  border: 4px solid #fff; 
+  /* Um brilho suave atrás da foto usando a cor azul tecnológica (opcional) */
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.4); 
+  
+  transition: transform 0.3s ease;
+}
+
+/* Efeito de hover (passar o mouse) na foto */
+.hero-profile-pic:hover {
+  transform: scale(1.05); /* Aumenta levemente */
+  box-shadow: 0 0 30px rgba(0, 212, 255, 0.6);
+}
+
+/* Responsividade: Celular */
+@media (max-width: 768px) {
+  .hero-profile-pic {
+    width: 140px; /* Foto um pouco menor em telas menores */
+    height: 140px;
+    margin-bottom: 20px;
+  }
+}
