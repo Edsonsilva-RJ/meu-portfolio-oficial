@@ -16,9 +16,10 @@ function App() {
       <Hero />
       <About />
       <Projects />
+      <SpeedInsights />
       <Contact />
       <WhatsAppButton />
-      <SpeedInsights />
+      
     </div>
   );
 }
