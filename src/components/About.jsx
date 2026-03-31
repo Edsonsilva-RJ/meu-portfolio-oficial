@@ -8,7 +8,7 @@ const About = () => {
         <div className="about-text">
           <h2>Sobre Minha Trajetória</h2>
           <p>
-            Atualmente no <strong>9º semestre de Engenharia de Computação</strong> pela Uninter e cursando Programação no Senai Jacarepaguá, 
+            Atualmente no <strong>9º semestre de Engenharia de Computação</strong> pela Uninter e cursando Programação no SENAI Jacarepaguá, 
             minha jornada é marcada pela transição da gestão operacional para o desenvolvimento tecnológico.
           </p>
           <p>
